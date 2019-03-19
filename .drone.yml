@@ -1,0 +1,13 @@
+kind: pipeline
+name: default
+
+steps:
+- name: frontend
+  image: node
+  commands:
+  - npm -v
+
+- name: backend
+  image: golang
+  commands:
+  - env
